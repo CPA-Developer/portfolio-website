@@ -11,17 +11,15 @@ const InfoSection = () => {
           <h2>About</h2>
           <div className='section-line'></div>
         </div>
-        <Row>
-         
-          <Col lg={8} className='pt-8 pt-lg-4 content'>
+        
+        <div className='section-content'>
             <h3 className='mt-md-0 mt-3'>Front-end Developer.</h3>
            <p>         'Hello! My name is Sebastian. I am currently in Computer Programmer Analyst program at St. Lawrence College and I am graduating at the end of April 2022. I am passionate about things related to technology, especially the Web Development.',
     'I would love the opportunity to learn and work alongside other like-minded professionals who are all collaborating to build the best website and software possible that meets the ever-changing needs of the end-user.',  </p>
 
+    </div>
            
-           
-          </Col>
-        </Row>
+         
       </div>
     </Section>
     

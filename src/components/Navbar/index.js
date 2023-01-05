@@ -19,7 +19,7 @@ const Navbar = ({toggle}) => {
                 <NavLinks  to='about'>About</NavLinks>
             </NavItems>
             <NavItems>
-                <NavLinks to='Education'>Education</NavLinks>
+                <NavLinks to='timeline'>Timeline</NavLinks>
             </NavItems>
           
             <NavItems>

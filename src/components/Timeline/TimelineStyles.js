@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding-top: 3rem;
+ 
+  padding: 3rem;
  height: auto;
  width: auto;
   color:  rgb(242, 242, 242);

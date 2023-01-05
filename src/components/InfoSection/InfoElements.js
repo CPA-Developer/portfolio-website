@@ -3,18 +3,28 @@ import styled from "styled-components";
 export const Section = styled.section`
   background: black;
   color: #fff;
+  
 
   h3 {
-    font-weight: 700;
+   
+    font-weight: 500;
+    
     font-size: 26px;
+    padding-bottom: 2rem;
   }
+  .section-content{
+        padding: 4rem;
+    }
+
 
   .content {
     ul {
       padding: 0;
     }
 
+   
     p {
+        padding-left: 3rem;
       &:last-child {
         margin-bottom: 0;
       }
