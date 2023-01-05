@@ -31,7 +31,11 @@ const HeroSection = () => {
         <HeroBtnWrapper>
             <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}
             primary="true"
-            dark="true">
+            dark="true"
+            spy={true}
+            duration={500}
+            exact="true"
+            offset={-80}>
                 Know me more {hover? <ArrowForward />:<ArrowRight/>}
             </Button>
         </HeroBtnWrapper>
