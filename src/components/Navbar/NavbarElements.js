@@ -57,10 +57,10 @@ export const Nav = styled.nav`
 
  export const NavMenu = styled.ul`
 display: flex;
-align-items: center;
+align-items:center;
 list-style: none;
 text-align: center;
-margin-right: -22px;
+margin-right: -430px;
 
 @media screen and (max-width:768px){
    display: none;
@@ -81,6 +81,10 @@ height: 100%;
 cursor: pointer;
 
 &:active{
+   border-bottom: 3px solid #01bf71;
+}
+
+&:hover{
    border-bottom: 3px solid #01bf71;
 }
 `;

@@ -19,14 +19,14 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBG>
-        <VideoBG autoPlay loop muted src={Video} type='video/mp4'/>
+        <VideoBG autoPlay loop muted src={Video} playsInline type='video/mp4'/>
       </HeroBG>
       <HeroContent>
         <HeroH1>
-            MY portfolio
+            Hello!
         </HeroH1>
         <HeroP>
-            Graduate from st. lawrence college. Looking for more opportunities.
+        I am Subin Sebastian, a highly skilled and dedicated application developer with a passion for creating simple, modern applications that enhance the user experience. 
         </HeroP>
         <HeroBtnWrapper>
             <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}

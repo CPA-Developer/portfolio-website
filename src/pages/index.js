@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import Navbar from '../components/Navbar';
@@ -20,6 +22,8 @@ const Home = () => {
       <HeroSection/>
       <InfoSection/>
       <Education/>
+      <Contact/>
+      <Footer/>
 
     </>
   );
