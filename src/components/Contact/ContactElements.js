@@ -22,11 +22,18 @@ export const StyledContactForm = styled.div`
     flex-direction: column;
     width: 100%;
     font-size: 16px;
+    @media (max-width: 992px) {
+     width: 60%;
+     margin-left: 1rem;
+    }
+
+
     input {
       width: 100%;
       background: #5e816d;
       height: 35px;
       padding: 7px;
+      
       outline: none;
       border-radius: 5px;
      
