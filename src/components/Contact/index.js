@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { StyledContactForm, Section } from "./ContactElements";
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,6 +6,24 @@ import { ToastContainer, toast } from 'react-toastify';
 
 
 const Contact = () => {
+  
+ const [position, setPosition] = useState("top-center");
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 768) {
+     setPosition("top-center");
+      } else {
+        setPosition("top-right");
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -50,7 +68,7 @@ const Contact = () => {
       </form>
     </StyledContactForm>
     <ToastContainer
-    position="top-right"
+    position={position}
     autoClose={5000}
     hideProgressBar={false}
     newestOnTop={false}

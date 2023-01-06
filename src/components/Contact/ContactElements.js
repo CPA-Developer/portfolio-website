@@ -10,6 +10,12 @@ export const Section = styled.section`
  width: auto;
   color:  rgb(242, 242, 242);
   background: black;
+
+  @media only screen and (max-width: 768px) {
+  .Toastify__toast-container{
+    width: 50vw;
+  }}
+  
 `;
 
 
