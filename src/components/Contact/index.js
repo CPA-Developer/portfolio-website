@@ -79,7 +79,7 @@ const Contact = () => {
     pauseOnHover
     theme="dark"
     />
-    
+
       <div className='footer-line'></div>
     </Section>
     

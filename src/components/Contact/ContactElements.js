@@ -13,8 +13,17 @@ export const Section = styled.section`
 
   @media only screen and (max-width: 768px) {
   .Toastify__toast-container{
-    width: 50vw;
-  }}
+    width: 180px;
+    
+   
+  
+  }
+  .Toastify__toast-container--bottom-center, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right {
+  margin-top: 200px;
+  margin-left: 4rem;
+}
+
+}
   
 `;
 
