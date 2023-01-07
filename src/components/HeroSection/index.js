@@ -17,7 +17,7 @@ const HeroSection = () => {
     };
 
   return (
-    <HeroContainer>
+    <HeroContainer id='home'>
       <HeroBG>
         <VideoBG autoPlay loop muted src={Video} playsInline type='video/mp4'/>
       </HeroBG>
