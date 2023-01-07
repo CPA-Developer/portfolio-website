@@ -40,7 +40,7 @@ flex-wrap: wrap;
 position: relative;
 height: 400px;
 width: 400px;
-margin-left: 3rem;
+margin-left: 35rem;
 border: 1px solid;
 @media only screen and (max-width: 768px) {
   margin-left: -.05rem;
@@ -48,6 +48,12 @@ border: 1px solid;
    margin-top: -2rem;
 }
 
+
+@media only screen and (max-width: 1150px) {
+  margin-left: 2rem;
+   margin-bottom: 2rem;
+   margin-top: -2rem;
+}
 }
 
 `;

@@ -4,8 +4,10 @@ import { StyledContactForm, Section, MainContainer } from "./ContactElements";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
   import mapboxgl from 'mapbox-gl';
-  
-
+  // // eslint-disable-next-line import/no-webpack-loader-syntax
+  // import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
+  // eslint-disable-next-line import/no-webpack-loader-syntax
+ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Contact = () => {
   
