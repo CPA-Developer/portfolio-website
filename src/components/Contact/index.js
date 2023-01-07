@@ -10,41 +10,41 @@ import { ToastContainer, toast } from 'react-toastify';
 const Contact = () => {
   
  const [position, setPosition] = useState("top-center");
-//  mapboxgl.accessToken = 'pk.eyJ1Ijoic3ViaW5zZWJhc3RpYW43NzciLCJhIjoiY2xjbTN1MDg3MG9yZzN2czk2YjY1ZmxubCJ9.4OoOcYK935xhPfkTM0_2Ug';
-//  const mapContainer = useRef(null);
-// const map = useRef(null);
-// const [lng, setLng] = useState(-76.593978);
-// const [lat, setLat] = useState(44.2366404);
-// const [zoom, setZoom] = useState(9);
+ mapboxgl.accessToken = 'pk.eyJ1Ijoic3ViaW5zZWJhc3RpYW43NzciLCJhIjoiY2xjbTN1MDg3MG9yZzN2czk2YjY1ZmxubCJ9.4OoOcYK935xhPfkTM0_2Ug';
+ const mapContainer = useRef(null);
+const map = useRef(null);
+const [lng, setLng] = useState(-76.593978);
+const [lat, setLat] = useState(44.2366404);
+const [zoom, setZoom] = useState(9);
 
-// useEffect(() => {
-//   if (map.current) return; // initialize map only once
-//  map.current = new mapboxgl.Map({
-//   container: mapContainer.current,
-//   style: 'mapbox://styles/mapbox/navigation-night-v1',
-//   center: [lng, lat],
-//   zoom: zoom,
-//   attributionControl: false
-//   });
+useEffect(() => {
+  if (map.current) return; // initialize map only once
+ map.current = new mapboxgl.Map({
+  container: mapContainer.current,
+  style: 'mapbox://styles/mapbox/navigation-night-v1',
+  center: [lng, lat],
+  zoom: zoom,
+  attributionControl: false
+  });
     
   
   
-//   const marker = new mapboxgl.Marker()
-//     .setLngLat([-76.593978, 44.2366404])
-//     .addTo(map.current);
+  const marker = new mapboxgl.Marker()
+    .setLngLat([-76.593978, 44.2366404])
+    .addTo(map.current);
 
-//   });
+  });
 
   
 
-//   useEffect(() => {
-//     if (!map.current) return; // wait for map to initialize
-//     map.current.on('move', () => {
-//     setLng(map.current.getCenter().lng.toFixed(4));
-//     setLat(map.current.getCenter().lat.toFixed(4));
-//     setZoom(map.current.getZoom().toFixed(2));
-//     });
-//     });
+  useEffect(() => {
+    if (!map.current) return; // wait for map to initialize
+    map.current.on('move', () => {
+    setLng(map.current.getCenter().lng.toFixed(4));
+    setLat(map.current.getCenter().lat.toFixed(4));
+    setZoom(map.current.getZoom().toFixed(2));
+    });
+    });
 
   useEffect(() => {
     function handleResize() {
@@ -107,7 +107,7 @@ const Contact = () => {
       </form>
     </StyledContactForm>
 
-    {/* <div ref={mapContainer} className="map-container" /> */}
+    <div ref={mapContainer} className="map-container" />
     </MainContainer>
 
     <ToastContainer
