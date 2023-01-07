@@ -9,6 +9,8 @@ import { HeroContainer, HeroBG, VideoBG,
 } from './HeroElements';
 import Video from '../../videos/video.mp4';
 import { Button } from '../ButtonElement';
+import {TypeAnimation} from 'react-type-animation';
+
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
@@ -23,10 +25,26 @@ const HeroSection = () => {
       </HeroBG>
       <HeroContent>
         <HeroH1>
-            Hello!
+        <p>
+          &lt;h1&gt;
+          <TypeAnimation
+            cursor={true}
+            sequence={[
+              'Hi I am Subin Sebastian',
+              1000,
+              'I am a Application developer.',
+              1000,
+              '',
+            ]}
+            speed={35}
+            wrapper='b'
+            repeat={Infinity}
+          />
+          &lt;/h1&gt;
+        </p>
         </HeroH1>
         <HeroP>
-        I am Subin Sebastian, a highly skilled and dedicated application developer with a passion for creating simple, modern applications that enhance the user experience. 
+        Highly skilled and dedicated application developer with a passion for creating simple, modern applications that enhance the user experience. 
         </HeroP>
         <HeroBtnWrapper>
             <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}
