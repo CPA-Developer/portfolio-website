@@ -6,10 +6,14 @@ import styled from "styled-components";
 export const Section = styled.section`
  
   padding: 3rem;
+  
+  
  height: auto;
  width: auto;
   color:  rgb(242, 242, 242);
   background: black;
+
+
 
   @media only screen and (max-width: 768px) {
   .Toastify__toast-container{
@@ -27,6 +31,26 @@ export const Section = styled.section`
   
 `;
 
+export const MainContainer= styled.div`
+
+display: flex;
+flex-wrap: wrap;
+
+.map-container {
+position: relative;
+height: 400px;
+width: 400px;
+margin-left: 3rem;
+border: 1px solid;
+@media only screen and (max-width: 768px) {
+  margin-left: -.05rem;
+   margin-bottom: 2rem;
+   margin-top: -2rem;
+}
+
+}
+
+`;
 
 
 export const StyledContactForm = styled.div`

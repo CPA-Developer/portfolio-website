@@ -13,6 +13,10 @@ export const Section = styled.section`
   font-size: 13px;
 }
 
+@media only screen and (max-width: 768px) {
+  margin-top: -3rem;
+}
+
 `;
 export const Container = styled.div`
 
